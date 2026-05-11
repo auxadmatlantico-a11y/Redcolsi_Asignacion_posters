@@ -1,0 +1,403 @@
+2026-05-11 16:07:22,413 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:07:40,604 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:07:40,648 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:08:38,881 | INFO | Procesando fila 2 | Poster=1 | Título=Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:08:58,836 | ERROR | ERROR en fila 2: Locator.fill: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 353, in main
+    assign_project(page, title, poster)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 235, in assign_project
+    "textbox", name="Descripción de la programación").fill(DESCRIPCION)
+                                                      ~~~~^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16548, in fill
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.fill(
+        ^^^^^^^^^^^^^^^^^^^^
+            value=value, timeout=timeout, noWaitAfter=no_wait_after, force=force
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 215, in fill
+    return await self._frame.fill(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 607, in fill
+    await self._fill(**locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 619, in _fill
+    await self._channel.send("fill", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.fill: Target page, context or browser has been closed
+2026-05-11 16:08:58,839 | INFO | Procesando fila 3 | Poster=2 | Título=ENCEFALOGRAFO DE BAJO COSTO PARA ESTUDIO DE LA EPILEPSIA Y TRANSTORNOS DE SUEÑO
+2026-05-11 16:08:58,938 | ERROR | ERROR en fila 3: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 349, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:08:58,940 | INFO | Procesando fila 4 | Poster=3 | Título=Monitorización inalámbrica de fatiga muscular mediante concentración ionica
+2026-05-11 16:08:59,015 | ERROR | ERROR en fila 4: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 349, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:08:59,349 | INFO | Proceso finalizado. Archivo actualizado: C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\REDCOLSI_2026_Asignacion_resultado.xlsx
+2026-05-11 16:09:00,009 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:09:00,052 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:09:53,622 | INFO | Procesando fila 2 | Poster=1 | Título=Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:10:13,187 | ERROR | ERROR en fila 2: Locator.fill: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 353, in main
+    assign_project(page, title, poster)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 235, in assign_project
+    "textbox", name="Descripción de la programación").fill(DESCRIPCION)
+                                                      ~~~~^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16548, in fill
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.fill(
+        ^^^^^^^^^^^^^^^^^^^^
+            value=value, timeout=timeout, noWaitAfter=no_wait_after, force=force
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 215, in fill
+    return await self._frame.fill(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 607, in fill
+    await self._fill(**locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 619, in _fill
+    await self._channel.send("fill", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.fill: Target page, context or browser has been closed
+2026-05-11 16:10:13,189 | INFO | Procesando fila 3 | Poster=2 | Título=ENCEFALOGRAFO DE BAJO COSTO PARA ESTUDIO DE LA EPILEPSIA Y TRANSTORNOS DE SUEÑO
+2026-05-11 16:10:13,267 | ERROR | ERROR en fila 3: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 349, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:10:13,268 | INFO | Procesando fila 4 | Poster=3 | Título=Monitorización inalámbrica de fatiga muscular mediante concentración ionica
+2026-05-11 16:10:13,351 | ERROR | ERROR en fila 4: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 349, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:10:13,648 | INFO | Proceso finalizado. Archivo actualizado: C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\REDCOLSI_2026_Asignacion_resultado.xlsx
+2026-05-11 16:12:23,380 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:12:23,419 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:13:21,852 | INFO | Procesando fila 2 | Poster=1 | Título=Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:14:17,464 | ERROR | ERROR en fila 2: No se encontró el proyecto en la tabla: Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 347, in main
+    assign_project(page, title, poster)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 241, in assign_project
+    raise ValueError(
+        f"No se encontró el proyecto en la tabla: {project_title}")
+ValueError: No se encontró el proyecto en la tabla: Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:14:17,465 | INFO | Procesando fila 3 | Poster=2 | Título=ENCEFALOGRAFO DE BAJO COSTO PARA ESTUDIO DE LA EPILEPSIA Y TRANSTORNOS DE SUEÑO
+2026-05-11 16:14:17,546 | ERROR | ERROR en fila 3: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 343, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:14:17,548 | INFO | Procesando fila 4 | Poster=3 | Título=Monitorización inalámbrica de fatiga muscular mediante concentración ionica
+2026-05-11 16:14:17,632 | ERROR | ERROR en fila 4: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 343, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:14:18,013 | INFO | Proceso finalizado. Archivo actualizado: C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\REDCOLSI_2026_Asignacion_resultado.xlsx
+2026-05-11 16:16:33,003 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:16:33,041 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:17:32,678 | INFO | Procesando fila 2 | Poster=1 | Título=Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:18:42,176 | INFO | Fila 2 completada correctamente.
+2026-05-11 16:18:44,951 | INFO | Procesando fila 3 | Poster=2 | Título=ENCEFALOGRAFO DE BAJO COSTO PARA ESTUDIO DE LA EPILEPSIA Y TRANSTORNOS DE SUEÑO
+2026-05-11 16:18:49,079 | ERROR | ERROR en fila 3: Locator.wait_for: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 353, in main
+    assign_project(page, title, poster)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 208, in assign_project
+    set_date_with_js(page, FECHA_FIJA)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 120, in set_date_with_js
+    locator.wait_for(state="visible", timeout=60000)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 18670, in wait_for
+    self._sync(self._impl_obj.wait_for(timeout=timeout, state=state))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 723, in wait_for
+    await self._frame.wait_for_selector(
+        self._selector, strict=True, timeout=timeout, state=state
+    )
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.wait_for: Target page, context or browser has been closed
+2026-05-11 16:18:49,082 | INFO | Procesando fila 4 | Poster=3 | Título=Monitorización inalámbrica de fatiga muscular mediante concentración ionica
+2026-05-11 16:18:49,158 | ERROR | ERROR en fila 4: Locator.click: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\automatizar_redcolsi (5).py", line 349, in main
+    page.get_by_role("tab", name="Programación").click(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        timeout=60000)
+        ^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\sync_api\_generated.py", line 16196, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_locator.py", line 162, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_frame.py", line 566, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Investigador-2\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed
+2026-05-11 16:18:49,528 | INFO | Proceso finalizado. Archivo actualizado: C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\REDCOLSI_2026_Asignacion_resultado.xlsx
+2026-05-11 16:32:21,690 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:32:21,734 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:33:18,468 | INFO | Procesando fila 2 | Poster=1 | Título=Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:33:57,213 | INFO | Fila 2 completada correctamente.
+2026-05-11 16:33:57,213 | INFO | Procesando fila 3 | Poster=2 | Título=ENCEFALOGRAFO DE BAJO COSTO PARA ESTUDIO DE LA EPILEPSIA Y TRANSTORNOS DE SUEÑO
+2026-05-11 16:34:39,581 | INFO | Fila 3 completada correctamente.
+2026-05-11 16:34:39,582 | INFO | Procesando fila 4 | Poster=3 | Título=Monitorización inalámbrica de fatiga muscular mediante concentración ionica
+2026-05-11 16:35:22,266 | INFO | Fila 4 completada correctamente.
+2026-05-11 16:35:22,756 | INFO | Proceso finalizado. Archivo actualizado: C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\REDCOLSI_2026_Asignacion_resultado.xlsx
+2026-05-11 16:49:06,077 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:49:06,120 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:49:27,984 | INFO | Registro inicializado en C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\log.txt
+2026-05-11 16:49:28,022 | INFO | Se encontraron 3 proyectos para procesar.
+2026-05-11 16:50:18,936 | INFO | Procesando fila 2 | Poster=1 | Título=Diseño de silla de ruedas de estimulación neurológica para enfermedades degenerativas (Neuro stim Wheel)
+2026-05-11 16:51:28,309 | INFO | Fila 2 completada correctamente.
+2026-05-11 16:51:28,309 | INFO | Procesando fila 3 | Poster=2 | Título=ENCEFALOGRAFO DE BAJO COSTO PARA ESTUDIO DE LA EPILEPSIA Y TRANSTORNOS DE SUEÑO
+2026-05-11 16:52:10,919 | INFO | Fila 3 completada correctamente.
+2026-05-11 16:52:10,919 | INFO | Procesando fila 4 | Poster=3 | Título=Monitorización inalámbrica de fatiga muscular mediante concentración ionica
+2026-05-11 16:52:53,296 | INFO | Fila 4 completada correctamente.
+2026-05-11 16:52:53,774 | INFO | Proceso finalizado. Archivo actualizado: C:\Users\Investigador-2\Documents\Proyectos Desarrollo redcolsi\Programacion de posters\REDCOLSI_2026_Asignacion_resultado.xlsx
